@@ -24,7 +24,7 @@ class Session {
     this.startTime = null;
     this.endTime = null;
 
-    this.durationSeconds = 60 * 60; // 60 minutes
+    this.durationSeconds = 60*60; // 60 minutes
   }
 
   start() {
