@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Andrew-Kangmin-Kim/SWIME#readme",
   "dependencies": {
+    "express": "^5.2.1",
     "uuid": "^13.0.0"
   }
 }
