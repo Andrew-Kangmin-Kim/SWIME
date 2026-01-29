@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SWIME</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 12px;
+        width: 240px;
+      }
+      input, button {
+        width: 100%;
+        margin-top: 8px;
+        padding: 8px;
+      }
+      pre {
+        margin-top: 10px;
+        font-size: 12px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>SWIME</h3>
+
+    <input id="userId" placeholder="userId (e.g. andrew)" />
+
+    <button id="startBtn">Start Study Session</button>
+    <button id="statusBtn">Check Status</button>
+    <button id="clearBtn">Clear Session</button>
+
+    <pre id="output"></pre>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

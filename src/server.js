@@ -71,25 +71,25 @@ app.post("/session/event", (req, res) => {
   });
 });
 
-// /**
-//  * Get session status (debug / observability)
-//  */
-// app.get("/session/:id", (req, res) => {
-//   const sessionId = req.params.id;
-//   const session = sessions.get(sessionId);
+/**
+ * Get session status (debug / observability)
+ */
+app.get("/session/:id", (req, res) => {
+  const sessionId = req.params.id;
+  const session = sessions.get(sessionId);
 
-//   if (!session) {
-//     return res.status(404).json({ error: "Session not found" });
-//   }
+  if (!session) {
+    return res.status(404).json({ error: "Session not found" });
+  }
 
-//   res.json({
-//     id: session.id,
-//     status: session.status,
-//     failReason: session.failReason,
-//     startTime: session.startTime,
-//     endTime: session.endTime,
-//   });
-// });
+  res.json({
+    id: session.id,
+    status: session.status,
+    failReason: session.failReason,
+    startTime: session.startTime,
+    endTime: session.endTime,
+  });
+});
 
 /**
  * Health check

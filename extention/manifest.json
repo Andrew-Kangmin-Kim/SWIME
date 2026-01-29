@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SWIME MVP",
+  "version": "0.3.0",
+  "description": "Minimal study enforcement extension for SWIME MVP",
+
+  "permissions": ["tabs", "storage"],
+
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SWIME"
+    
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  }
+
+}
